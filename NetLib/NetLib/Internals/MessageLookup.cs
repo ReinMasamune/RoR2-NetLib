@@ -20,7 +20,26 @@ namespace NetLib.Internals
 
         internal static void RegisterType( BaseNetMethod netMethod )
         {
+            if( netMethod == null )
+            {
+                Plugin.LogError( "Tried to register null netmethod" );
+                return;
+            }
 
+            if( netMethod.GetType() == typeof(BaseNetMethod) )
+            {
+                Plugin.LogError( "Cannot register a BaseNetMethod. Use NetMethod<T>" );
+                return;
+            }
+
+            String typeKey = netMethod.type.ToString();
+            if( messageTypes.ContainsKey( typeKey ) )
+            {
+                Plugin.LogError( "Tried to register with an already-used key" );
+                return;
+            }
+
+            messageTypes[typeKey] = netMethod;
         }
     }
 }
