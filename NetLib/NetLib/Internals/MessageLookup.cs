@@ -72,12 +72,22 @@ namespace NetLib.Internals
 
         internal static BaseNetMethod GetNetMethod( String typekey )
         {
+            if( typekey == Const.Invalidtypekey )
+            {
+                Plugin.LogError( "Cannot get NetMethod for invalid typekey" );
+                return null;
+            }
             if( !messageTypes.ContainsKey( typekey ) )
             {
                 Plugin.LogError( "Key: " + typekey + " does not have a registered NetMethod. You may be missing mods or a NetMethod was not registered properly." );
             }
 
             return messageTypes[typekey];
+        }
+
+        internal static BaseNetMethod GetNetMethod( NetMessage message )
+        {
+            return MessageLookup.GetNetMethod( MessageLookup.GetTypeKey( message ) );
         }
 
 
