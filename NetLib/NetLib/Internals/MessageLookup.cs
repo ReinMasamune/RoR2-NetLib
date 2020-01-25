@@ -18,21 +18,26 @@ namespace NetLib.Internals
     {
         private static Dictionary<String, BaseNetMethod> messageTypes = new Dictionary<String, BaseNetMethod>();
 
-        internal static void RegisterType( BaseNetMethod netMethod )
+        internal static String GetTypeKey( BaseNetMethod netMethod )
         {
             if( netMethod == null )
             {
-                Plugin.LogError( "Tried to register null netmethod" );
-                return;
+                Plugin.LogError( "Cannot get key for null netmethod" );
+                return "Invalid";
             }
 
             if( netMethod.GetType() == typeof( BaseNetMethod ) )
             {
-                Plugin.LogError( "Cannot register a BaseNetMethod. Use NetMethod<T>" );
-                return;
+                Plugin.LogError( "Cannot get key for a BaseNetMethod. Use NetMethod<T>" );
+                return "Invalid";
             }
 
-            String typeKey = netMethod.type.ToString();
+            return netMethod.type.AssemblyQualifiedName;
+        }
+
+        internal static void RegisterType( BaseNetMethod netMethod )
+        {
+            String typeKey = GetTypeKey( netMethod );
             if( typeKey == "Invalid" )
             {
                 Plugin.LogError( "Error with key generation" );
@@ -57,5 +62,7 @@ namespace NetLib.Internals
 
             return messageTypes[typekey];
         }
+
+
     }
 }
