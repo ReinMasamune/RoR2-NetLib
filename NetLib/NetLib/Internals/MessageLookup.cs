@@ -26,13 +26,19 @@ namespace NetLib.Internals
                 return;
             }
 
-            if( netMethod.GetType() == typeof(BaseNetMethod) )
+            if( netMethod.GetType() == typeof( BaseNetMethod ) )
             {
                 Plugin.LogError( "Cannot register a BaseNetMethod. Use NetMethod<T>" );
                 return;
             }
 
             String typeKey = netMethod.type.ToString();
+            if( typeKey == "Invalid" )
+            {
+                Plugin.LogError( "Error with key generation" );
+                return;
+            }
+
             if( messageTypes.ContainsKey( typeKey ) )
             {
                 Plugin.LogError( "Tried to register with an already-used key" );
@@ -40,6 +46,16 @@ namespace NetLib.Internals
             }
 
             messageTypes[typeKey] = netMethod;
+        }
+
+        internal static BaseNetMethod GetNetMethod( String typekey )
+        {
+            if( !messageTypes.ContainsKey( typekey ) )
+            {
+                Plugin.LogError( "Key: " + typekey + " does not have a registered NetMethod. You may be missing mods or a NetMethod was not registered properly." );
+            }
+
+            return messageTypes[typekey];
         }
     }
 }
