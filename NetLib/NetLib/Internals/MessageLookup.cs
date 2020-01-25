@@ -22,7 +22,7 @@ namespace NetLib.Internals
         {
             if( netMethod == null )
             {
-                Plugin.LogError( "Cannot get key for null netmethod" );
+                Plugin.LogError( "Cannot get key for null NetMethod" );
                 return "Invalid";
             }
 
@@ -33,6 +33,23 @@ namespace NetLib.Internals
             }
 
             return netMethod.type.AssemblyQualifiedName;
+        }
+
+        internal static String GetTypeKey( NetMessage message )
+        {
+            if( message == null )
+            {
+                Plugin.LogError( "Cannot get key for null NetMessage" );
+                return "Invalid";
+            }
+
+            if( message.GetType() == typeof( NetMessage ) )
+            {
+                Plugin.LogError( "Cannot get key for NetMessage. Create a class that inherits NetMessage" );
+                return "Invalid";
+            }
+
+            return message.GetType().AssemblyQualifiedName;
         }
 
         internal static void RegisterType( BaseNetMethod netMethod )
