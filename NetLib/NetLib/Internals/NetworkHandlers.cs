@@ -18,10 +18,23 @@ namespace NetLib.Internals
     {
         private static readonly Int16[] indicies =
         {
-            Const.mainMessageIndex
+            Const.MainMessageIndex
         };
         internal static readonly HashSet<Int16> usedIndicies = new HashSet<Int16>(indicies);
 
 
+
+        [NetworkMessageHandler(client = true, server = true, msgType = Const.MainMessageIndex )]
+        private static void HandleMessageMain( NetworkMessage message )
+        {
+            NetMessageHolder holder = message.ReadMessage<NetMessageHolder>();
+            if( !holder.safe )
+            {
+                Plugin.LogError( "TEMP" );
+                return;
+            }
+
+            holder.handler.HandleMessage( holder.message );
+        }
     }
 }
