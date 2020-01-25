@@ -7,10 +7,12 @@ namespace NetLib.Internals
 {
     internal static partial class Const
     {
-        internal const String guid = "com.Rein.NetLib";
-        internal const String name = "NetLib";
+        internal const String GUID = "com.Rein.NetLib";
+        internal const String Name = "NetLib";
 
-        internal const BindingFlags allFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance;
-        internal const Int16 mainMessageIndex = 31415;
+        internal const Int16 MainMessageIndex = 31415;
+
+        internal const BindingFlags AllFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance;
+
     }
 }

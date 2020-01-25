@@ -5,9 +5,9 @@ namespace NetLib
 {
     public static class NetLib
     {
-        public const String guid = Internals.Plugin.guid;
-        public const String name = Internals.Plugin.name;
-        public const String version = Internals.Plugin.version;
+        public const String guid = Internals.Plugin.NetLibGUID;
+        public const String name = Internals.Plugin.NetLibName;
+        public const String version = Internals.Plugin.NetLibVersion;
         
         public static Boolean IsMessageIndexUsed( Int16 index )
         {
