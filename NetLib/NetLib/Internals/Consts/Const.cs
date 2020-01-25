@@ -10,6 +10,8 @@ namespace NetLib.Internals
         internal const String GUID = "com.Rein.NetLib";
         internal const String Name = "NetLib";
 
+        internal const String Invalidtypekey = "Invalid";
+
         internal const Int16 MainMessageIndex = 31415;
 
         internal const BindingFlags AllFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance;

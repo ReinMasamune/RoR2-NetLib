@@ -23,13 +23,13 @@ namespace NetLib.Internals
             if( netMethod == null )
             {
                 Plugin.LogError( "Cannot get key for null NetMethod" );
-                return "Invalid";
+                return Const.Invalidtypekey;
             }
 
             if( netMethod.GetType() == typeof( BaseNetMethod ) )
             {
                 Plugin.LogError( "Cannot get key for a BaseNetMethod. Use NetMethod<T>" );
-                return "Invalid";
+                return Const.Invalidtypekey;
             }
 
             return netMethod.type.AssemblyQualifiedName;
@@ -40,13 +40,13 @@ namespace NetLib.Internals
             if( message == null )
             {
                 Plugin.LogError( "Cannot get key for null NetMessage" );
-                return "Invalid";
+                return Const.Invalidtypekey;
             }
 
             if( message.GetType() == typeof( NetMessage ) )
             {
                 Plugin.LogError( "Cannot get key for NetMessage. Create a class that inherits NetMessage" );
-                return "Invalid";
+                return Const.Invalidtypekey;
             }
 
             return message.GetType().AssemblyQualifiedName;
@@ -55,7 +55,7 @@ namespace NetLib.Internals
         internal static void RegisterType( BaseNetMethod netMethod )
         {
             String typeKey = GetTypeKey( netMethod );
-            if( typeKey == "Invalid" )
+            if( typeKey == Const.Invalidtypekey )
             {
                 Plugin.LogError( "Error with key generation" );
                 return;
