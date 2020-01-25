@@ -6,3 +6,5 @@
 /.vs
 /NetLib/.vs/NetLib/v16
 /NetLib/NetLib/obj
+/NetLib/.vs/NetLib/DesignTimeBuild/.dtbcache
+/NetLib/.vs/NetLib/DesignTimeBuild
