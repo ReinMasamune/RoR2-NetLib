@@ -5,7 +5,7 @@
 <#@ output extension=".cs" #>
 namespace NetLib.Internals
 {
-	public static class Version
+	internal static partial class Const
 	{
 	<#
 		String path = "C:\\Users\\reinm\\source\\repos\\ReinRoR2Modding\\WispSurvivor\\WispSurvivor.csproj";

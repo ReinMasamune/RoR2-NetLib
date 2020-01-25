@@ -2,15 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <FileVersion>1.0.0.4</FileVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="Internals\Version.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Version.tt</DependentUpon>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="0Harmony">
@@ -292,9 +286,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Internals\Version.tt">
+    <None Update="Internals\Consts\Const_version.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Version.cs</LastGenOutput>
+      <LastGenOutput>Const_version.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -303,10 +297,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Internals\Version.cs">
+    <Compile Update="Internals\Consts\Const_version.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Version.tt</DependentUpon>
+      <DependentUpon>Const_version.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 
