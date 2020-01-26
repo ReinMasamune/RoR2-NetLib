@@ -8,7 +8,7 @@ namespace NetLib.Internals
 	internal static partial class Const
 	{
 	<#
-		String path = "C:\\Users\\reinm\\source\\repos\\ReinRoR2Modding\\WispSurvivor\\WispSurvivor.csproj";
+		String path = "C:\\Users\\reinm\\source\\repos\\RoR2-NetLib\\NetLib\\NetLib\\NetLib.csproj";
 		String vers = "";
 		XmlDocument xmldoc = new XmlDocument();
 		xmldoc.Load( path );
