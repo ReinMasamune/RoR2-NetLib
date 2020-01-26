@@ -14,7 +14,8 @@ using System.Collections.Generic;
 
 namespace NetLib.Internals
 {
-    internal class BaseNetMethod
+    [EditorBrowsable( EditorBrowsableState.Never )]
+    public class BaseNetMethod
     {
         internal Type type;
 
