@@ -39,7 +39,7 @@ namespace NetLib
             All = 3
         }
 
-        protected void Send( Destination dest = Destination.All, Boolean authority = false, QosType sendType = Internals.Const.DefaultQos )
+        public void Send( Destination dest = Destination.All, Boolean authority = false, QosType sendType = Internals.Const.DefaultQos )
         {
             this.context = new NetContext( authority );
             var holder = new Internals.NetMessageHolder(this, this.context );

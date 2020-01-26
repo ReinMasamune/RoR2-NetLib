@@ -19,6 +19,11 @@ namespace NetLib.Internals
             instance = this;
         }
 
+        private void Awake()
+        {
+            BuiltIns.ExampleTest.Register();
+        }
+
         private void OnEnable()
         {
             HookHandlerAttribute.InitHooks();
