@@ -22,6 +22,8 @@ namespace NetLib.Internals
         private void Awake()
         {
             BuiltIns.ExampleTest.Register();
+            BuiltIns.SendBuff.Register();
+            BuiltIns.SendDamage.Register();
         }
 
         private void OnEnable()
