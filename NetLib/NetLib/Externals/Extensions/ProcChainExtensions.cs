@@ -3,6 +3,7 @@ using RoR2;
 using System;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using UnityEngine.Networking;
 
 namespace NetLib
@@ -12,6 +13,7 @@ namespace NetLib
         private static Action<NetworkWriter,ProcChainMask> int_WriteProcChainMask;
         private static Func<NetworkReader,ProcChainMask> int_ReadProcChainMask;
 
+        [MethodImpl( MethodImplOptions.AggressiveInlining )]
         public static void Write( this NetworkWriter writer, ProcChainMask procChainMask )
         {
             if( int_WriteProcChainMask == null )
@@ -24,7 +26,7 @@ namespace NetLib
 
             int_WriteProcChainMask( writer, procChainMask );
         }
-
+        [MethodImpl( MethodImplOptions.AggressiveInlining )]
         public static ProcChainMask ReadProcChainMask( this NetworkReader reader )
         {
             if( int_ReadProcChainMask == null )

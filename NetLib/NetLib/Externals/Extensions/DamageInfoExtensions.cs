@@ -3,6 +3,7 @@ using RoR2;
 using System;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using UnityEngine.Networking;
 
 namespace NetLib
@@ -12,7 +13,7 @@ namespace NetLib
         private static Action<NetworkWriter,DamageInfo> int_WriteDamageInfo;
         private static Func<NetworkReader,DamageInfo> int_ReadDamageInfo;
 
-        
+        [MethodImpl( MethodImplOptions.AggressiveInlining )]
         public static void Write( this NetworkWriter writer, DamageInfo damageInfo )
         {
             if( int_WriteDamageInfo == null )
@@ -25,7 +26,7 @@ namespace NetLib
 
             int_WriteDamageInfo( writer, damageInfo );
         }
-
+        [MethodImpl( MethodImplOptions.AggressiveInlining )]
         public static DamageInfo ReadDamageInfo( this NetworkReader reader )
         {
             if( int_ReadDamageInfo == null )
