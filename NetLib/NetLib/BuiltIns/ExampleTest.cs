@@ -22,7 +22,7 @@ namespace NetLib.BuiltIns
         }
 
         //A method used to register the message type. This should usually be done in the Awake of your plugin.
-        public static void Register()
+        internal static void Register()
         {
             //Declare an Action that is performed on the message type when it is recieved.
             Action<TestMessage> testNetworkAction = ( testMessage ) =>
@@ -38,7 +38,7 @@ namespace NetLib.BuiltIns
         }
 
         //Define a class that inherits NetMessage and holds the we need to send.
-        public class TestMessage : NetMessage
+        internal class TestMessage : NetMessage
         {
             //The data we need to send. In this case, this represents the message that will be printed to chat.
             public String text { get; private set; }
