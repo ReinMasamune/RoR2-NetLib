@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine.Networking;
 
-namespace NetLib.Internals.Extensions
+namespace NetLib.Internals
 {
     internal static partial class InternalExtensions
     {
-        #region NetContext
         internal static void Write( this NetworkWriter writer, NetContext context )
         {
             context.Serialize( writer );
@@ -16,6 +15,5 @@ namespace NetLib.Internals.Extensions
         {
             return new NetContext( reader );
         }
-        #endregion
     }
 }
