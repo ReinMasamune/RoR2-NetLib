@@ -17,7 +17,6 @@ namespace NetLib.Internals
         private Plugin()
         {
             instance = this;
-            Extensions.Construct();
         }
 
         private void Awake()

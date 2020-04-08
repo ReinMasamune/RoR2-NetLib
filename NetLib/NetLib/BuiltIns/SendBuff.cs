@@ -184,7 +184,7 @@ namespace NetLib.BuiltIns
                 //Write the index of the buff.
                 //Note that this particular overload of Write is found as an extension in netlib, so you need using NetLib; to use it.
                 //All of the extra extensions in netlib are currently direct mappings of game methods, with occasional args shuffled for consistency and clarity.
-                writer.Write( this.buff );
+                writer.WriteBuffIndex( this.buff );
                 //Write the number of stacks
                 writer.Write( this.stacks );
                 //Write the duration

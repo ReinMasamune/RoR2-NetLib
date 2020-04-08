@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.0.2.14</AssemblyVersion>
-    <FileVersion>0.0.2.14</FileVersion>
+    <AssemblyVersion>0.0.2.17</AssemblyVersion>
+    <FileVersion>0.0.2.17</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -16,280 +16,280 @@
 
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp.R2API.mm">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Assembly-CSharp.R2API.mm.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\RoR2\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx.Harmony.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.MonoMod.Loader">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx.MonoMod.Loader.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\BepInEx.MonoMod.Loader.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Preloader">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx.Preloader.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\BepInEx.Preloader.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Steamworks">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Facepunch.Steamworks.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Facepunch.Steamworks.dll</HintPath>
     </Reference>
-    <Reference Include="MMHOOK_Assembly-CSharp">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\MMHOOK_Assembly-CSharp.dll</HintPath>
+    <Reference Include="KdTreeLib">
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\KdTreeLib.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Mono.Cecil.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Mono.Cecil.Mdb.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Pdb">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Mono.Cecil.Pdb.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Rocks">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Mono.Cecil.Rocks.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Security">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Mono.Security.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\MonoMod.exe</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\MonoMod.exe</HintPath>
     </Reference>
     <Reference Include="MonoMod.RuntimeDetour">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\MonoMod.RuntimeDetour.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\MonoMod.RuntimeDetour.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.Utils">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\MonoMod.Utils.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\BepInEx\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderCore">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\ProBuilderCore.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\ProBuilderCore.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderMeshOps">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\ProBuilderMeshOps.dll</HintPath>
-    </Reference>
-    <Reference Include="R2API">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\R2API.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\ProBuilderMeshOps.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Core">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Rewired_Core.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Rewired_Core.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_CSharp">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Rewired_CSharp.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Rewired_CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Windows_Lib">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Rewired_Windows_Lib.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Rewired_Windows_Lib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.BaselibModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.BaselibModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.BaselibModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ClusterInputModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ClusterInputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.FileSystemHttpModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.FileSystemHttpModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.FileSystemHttpModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.Networking.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StyleSheetsModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.StyleSheetsModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.StyleSheetsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TextCoreModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.Timeline.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TimelineModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TimelineModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TimelineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.VRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.WindModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\UnityEngine.XRModule.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Wwise">
-      <HintPath>..\..\..\ReinRoR2Modding\libs\Wwise.dll</HintPath>
+      <HintPath>..\..\..\ReinRoR2Modding\libs\Unity\Wwise.dll</HintPath>
     </Reference>
   </ItemGroup>
 
