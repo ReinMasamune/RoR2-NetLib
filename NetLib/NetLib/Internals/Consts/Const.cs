@@ -18,6 +18,5 @@ namespace NetLib.Internals
         internal const BindingFlags AllFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance;
 
         internal const QosType DefaultQos = QosType.Reliable;
-
     }
 }
