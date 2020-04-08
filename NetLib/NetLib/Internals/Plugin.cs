@@ -24,6 +24,7 @@ namespace NetLib.Internals
             BuiltIns.ExampleTest.Register();
             BuiltIns.SendBuff.Register();
             BuiltIns.SendDamage.Register();
+            BuiltIns.SendDoT.Register();
         }
 
         private void OnEnable()

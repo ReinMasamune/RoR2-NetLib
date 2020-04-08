@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetLib</name>
+    </assembly>
+    <members>
+        <member name="T:NetLib.BuiltIns.ExampleTest">
+            <summary>
+            A very basic example message setup, Sends a chat message to all connected players (assuming they also have NetLib)
+            Source is commented and serves as an entry level example for writing a custom message.
+            </summary>
+        </member>
+        <member name="T:NetLib.BuiltIns.SendBuff">
+            <summary>
+            Contains a few helper methods to allow clients to ask server to apply or remove a buff.
+            Useful for clientsided skills.
+            Source code serves as an example for writing a custom message and is heavily commented.
+            </summary>
+        </member>
+        <member name="M:NetLib.BuiltIns.SendBuff.AddBuff(RoR2.CharacterBody,RoR2.BuffIndex,System.Int32)">
+            <summary>
+            Adds stacks of a buff to the chosen body.
+            </summary>
+            <param name="body">The body that will recieve the buff</param>
+            <param name="buff">The buff that will be applied</param>
+            <param name="stacks">How many stacks to add</param>
+        </member>
+        <member name="M:NetLib.BuiltIns.SendBuff.AddTimedBuff(RoR2.CharacterBody,RoR2.BuffIndex,System.Single,System.Int32)">
+            <summary>
+            Adds stacks of a timed buff to the chosen body.
+            </summary>
+            <param name="body">The body that will recieve the buff</param>
+            <param name="buff">The buff that will be applied</param>
+            <param name="duration">The time until the buff expires</param>
+            <param name="stacks">The number of stacks to add</param>
+        </member>
+        <member name="M:NetLib.BuiltIns.SendBuff.RemoveBuff(RoR2.CharacterBody,RoR2.BuffIndex,System.Int32)">
+            <summary>
+            Removes stacks of a buff from the chosen body.
+            </summary>
+            <param name="body">The body to remove from</param>
+            <param name="buff">The buff to remove</param>
+            <param name="stacks">The number of stacks to remove</param>
+        </member>
+        <member name="M:NetLib.BuiltIns.SendBuff.RemoveAllBuffs(RoR2.CharacterBody,RoR2.BuffIndex)">
+            <summary>
+            Removes all stacks of a buff from the chosen body.
+            </summary>
+            <param name="body">The body to remove from</param>
+            <param name="buff">The buff to remove</param>
+        </member>
+        <member name="T:NetLib.BuiltIns.SendDamage">
+            <summary>
+            Contains a helper function to send damage from client to server.
+            More flexible than simply using the in game bullet damage messages.
+            Useful mostly for clientsided hit detection.
+            </summary>
+        </member>
+        <member name="M:NetLib.BuiltIns.SendDamage.DealDamage(RoR2.DamageInfo,RoR2.HurtBox,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Either deals damage or sends a damage message depending on context.
+            If target is null will not call TakeDamage or OnHitEnemy.
+            TakeDamage is what causes the actual health loss
+            OnHitEnemy is where most procs and similar effects occur.
+            OnHitAll is where Behemoth and Overloading Affix occur (Explosions when you shoot world)
+            </summary>
+            <param name="damage">The damageinfo to deal</param>
+            <param name="target">The target to deal damage to</param>
+            <param name="callDamage">Should HealthComponent.TakeDamage be called</param>
+            <param name="callHitEnemy">Should GlobalEventManager.OnHitEnemy be called</param>
+            <param name="callHitWorld">Should GlobalEventManager.OnHitAll be called</param>
+        </member>
+    </members>
+</doc>
